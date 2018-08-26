@@ -21,6 +21,14 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- SSOS version -->
+    <Preference
+        android:key="ssos_version"
+        android:title="@string/ssos_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SSOSVersionDetailPreferenceController"/>
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -62,6 +70,14 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+
+    <!-- Build date -->
+    <Preference
+        android:key="os_build_date"
+        android:title="@string/build_date"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SSOSBuildDatePreferenceController"/>
 
     <!-- Build -->
     <Preference

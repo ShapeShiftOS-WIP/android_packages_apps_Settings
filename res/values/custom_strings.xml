@@ -36,4 +36,8 @@
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Screen refresh rate</string>
 
+    <!-- SSOS version preference -->
+    <string name="ssos_version">"ShapeShiftOS version"</string>
+    <string name="build_date">"Build date"</string>
+
 </resources>
