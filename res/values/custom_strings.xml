@@ -40,4 +40,7 @@
     <string name="ssos_version">"ShapeShiftOS version"</string>
     <string name="build_date">"Build date"</string>
 
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
 </resources>
