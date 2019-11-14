@@ -56,4 +56,6 @@
     </plurals>
     <string name="emojii">😳😳😳</string>
 
+    <string name="custom_display_cutout_emulation">AOSP Cutout Emulation</string>
+
 </resources>
