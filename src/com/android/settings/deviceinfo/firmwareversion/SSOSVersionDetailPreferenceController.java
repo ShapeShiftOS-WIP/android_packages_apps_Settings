@@ -42,6 +42,7 @@ public class SSOSVersionDetailPreferenceController extends BasePreferenceControl
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
     private static final String KEY_SSOS_VERSION_PROP = "org.ssos.version";
+    private static final String KEY_SSOS_BUILDTYPE_PROP = "org.ssos.build_type";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
@@ -63,7 +64,7 @@ public class SSOSVersionDetailPreferenceController extends BasePreferenceControl
     @Override
     public CharSequence getSummary() {
         return SystemProperties.get(KEY_SSOS_VERSION_PROP,
-                mContext.getString(R.string.unknown));
+                mContext.getString(R.string.unknown)) + "-" + SystemProperties.get(KEY_SSOS_BUILDTYPE_PROP, mContext.getString(R.string.unknown));
     }
 
     @Override
