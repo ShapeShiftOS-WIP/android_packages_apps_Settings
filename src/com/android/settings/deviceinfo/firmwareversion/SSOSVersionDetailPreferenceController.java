@@ -64,7 +64,7 @@ public class SSOSVersionDetailPreferenceController extends BasePreferenceControl
     @Override
     public CharSequence getSummary() {
         return SystemProperties.get(KEY_SSOS_VERSION_PROP,
-                mContext.getString(R.string.unknown)) + "-" + SystemProperties.get(KEY_SSOS_BUILDTYPE_PROP, mContext.getString(R.string.unknown));
+                mContext.getString(R.string.unknown)) + " | " + SystemProperties.get(KEY_SSOS_BUILDTYPE_PROP, mContext.getString(R.string.unknown));
     }
 
     @Override
