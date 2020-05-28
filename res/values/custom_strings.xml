@@ -46,4 +46,7 @@
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
 
+    <!-- Search keywords for notification history -->
+    <string name="keywords_notification_log">notifications, notification log</string>
+
 </resources>
