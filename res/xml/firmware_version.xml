@@ -21,13 +21,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- SSOS version -->
-    <Preference
-        android:key="ssos_version"
-        android:title="@string/ssos_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SSOSVersionDetailPreferenceController"/>
+    <PreferenceScreen
+        android:layout="@layout/ssos_logo_layout"
+        android:selectable="false"
+        android:key="ssos_logo" />
 
     <!-- Android version -->
     <Preference
@@ -37,6 +34,14 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- SSOS version -->
+    <Preference
+        android:key="ssos_version"
+        android:title="@string/ssos_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SSOSVersionDetailPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
