@@ -49,4 +49,11 @@
     <!-- Search keywords for notification history -->
     <string name="keywords_notification_log">notifications, notification log</string>
 
+    <!-- About - Easter Egg -->
+    <plurals name="show_logo_countdown">
+        <item quantity="one">You are now <xliff:g id="count_down_ssos">%1$d</xliff:g> step away from meme center.</item>
+        <item quantity="other">You are now <xliff:g id="count_down_ssos">%1$d</xliff:g> steps away from meme center.</item>
+    </plurals>
+    <string name="emojii">😳😳😳</string>
+
 </resources>
